@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">snake</string>
+    <string-array name="BoardSize">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Big</item>
+    </string-array>
+    <string-array name="speed">
+        <item>Slow</item>
+        <item>Normal</item>
+        <item>Fast</item>
+    </string-array>
+</resources>

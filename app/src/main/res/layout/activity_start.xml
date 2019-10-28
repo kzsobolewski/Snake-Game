@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="@dimen/button_width"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="8dp"
+        android:text="SNAKE"
+        android:textSize="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/board_size_spinner_menu"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="8dp"
+        android:entries="@array/BoardSize"
+        app:layout_constraintEnd_toEndOf="@+id/name_edit_text_menu"
+        app:layout_constraintStart_toStartOf="@+id/name_edit_text_menu"
+        app:layout_constraintTop_toBottomOf="@+id/name_edit_text_menu" />
+
+    <Button
+        android:id="@+id/exit_button_menu"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="EXIT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/leader_board_button_menu"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="8dp"
+        android:text="Leader Board"
+        app:layout_constraintEnd_toEndOf="@+id/game_speed_spinner_menu"
+        app:layout_constraintStart_toStartOf="@+id/game_speed_spinner_menu"
+        app:layout_constraintTop_toBottomOf="@+id/game_speed_spinner_menu" />
+
+    <Button
+        android:id="@+id/start_button_menu"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:background="@color/colorAccent"
+        android:textColor="#FFF"
+        android:text="START"
+        android:elevation="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/exit_button_menu"
+        app:layout_constraintEnd_toEndOf="@+id/leader_board_button_menu"
+        app:layout_constraintStart_toStartOf="@+id/leader_board_button_menu"
+        app:layout_constraintTop_toBottomOf="@+id/leader_board_button_menu" />
+
+    <EditText
+        android:id="@+id/name_edit_text_menu"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Your name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Spinner
+        android:id="@+id/game_speed_spinner_menu"
+        android:entries="@array/speed"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/board_size_spinner_menu"
+        app:layout_constraintStart_toStartOf="@+id/board_size_spinner_menu"
+        app:layout_constraintTop_toBottomOf="@+id/board_size_spinner_menu" />
+</android.support.constraint.ConstraintLayout>
